@@ -1,0 +1,140 @@
+:root{
+    --mainColor:#333;
+    --secondColor:#4f4f4f;
+    --thirdColor:#BDBDBD;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    color: var(--secondColor);
+    margin-left: 27px;
+    margin-top: 20px;
+}
+.container{
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    word-wrap:break-word;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    column-gap: 30px;
+   
+}
+
+.picture img{
+    height: 447.43px;
+    width: 480px;
+}
+h1{
+    
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--mainColor);
+}
+.container .gauche p{
+    font-size: 24px;
+    color: var(--secondColor);
+
+}
+.gauche{
+   
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    gap: 40px;
+    
+}
+.container .innerPara{
+    width: 390px;
+    justify-content: flex-start;
+
+}
+button{
+    width: 216px;
+    height: 68px;
+    border: none;
+    outline: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+}
+ span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--thirdColor);
+    text-align: center;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    left: 577px;
+    bottom: -349px;
+} 
+
+/*responsive*/
+/* mobile */
+
+@media  (max-width:599px){
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 599px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .picture img{
+        width: 266.83px;
+        height: 220.35px;
+    }
+    
+    .container .gauche{
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 590px;
+    }
+   .container .gauche h1{
+    /* margin:0; */
+    font-size: 38px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    max-width: 340px;
+   }
+  
+.container .gauche p{
+    font-size: 18px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    justify-content: center;
+    width: 350px;
+   }
+   .container .gauche .btn{
+    width: 350px;
+   }
+   .footer span{
+    position: absolute;
+    left: 77px;
+    bottom: -123px;
+   }
+   
+   
+}
